@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>QUICKLINK</title>
+</head>
+
+<body>
+
+    <header class="container">
+        <div class="left-side">
+            <div class="quicklink-logo">
+                <img src="./icons/quick-black.svg" alt="Quicklink Icon">
+                <a href="" class="quicklink-text">QUICKLINK</a>
+            </div>
+            <nav class="nav-menu-list">
+                <ul class="menu-list">
+                    <li><a href="#opportunities" class="menu-item">Что это?</a></li>
+                    <li><a href="#try-introduction" class="menu-item">Как это выглядит?</a></li>
+                    <li><a href="#prices" class="menu-item">Сколько стоит?</a></li>
+                    <li><a href="#faq-box" class="menu-item">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="overlay"></div>
+        </div>
+        <div class="right-side">
+            <div class="menu">
+                <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                <label for="burger-checkbox" class="burger"></label>
+                <nav>
+                    <ul class="menu-list">
+                        <li class="border-bottom hidden">
+                            <a href="#" class="menu-item">Вход</a>
+                            <div class="burger-login">
+                                <img src="./icons/login.svg" alt="Login Icon">
+                            </div>
+                        </li>
+                        <li class="border-bottom">
+                            <a href="#opportunities" class="menu-item">Что это?</a>
+                        </li>
+                        <li class="border-bottom">
+                            <a href="#try-introduction" class="menu-item">Как это выглядит?</a>
+                        </li>
+                        <li class="border-bottom">
+                            <a href="#prices" class="menu-item">Сколько стоит?</a>
+                        </li>
+                        <li>
+                            <a href="#faq-box" class="menu-item">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="overlay"></div>
+            </div>
+            <button class="login">
+                <img src="./icons/login.svg" alt="Login Icon">
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="mt-80">
+            <div class="container">
+                <div class="introduction">
+                    <div class="small-introduction">
+                        <div class="small-description">
+                            <h1 class="small-title">
+                                <span>Все, что тебе</span>
+                                <span>нужно</span>
+                                <span>В одной ссылке</span>
+                            </h1>
+                            <p>
+                                Присоединяйся к более 50 млн. людей и делись всем, что ты создаешь, курируешь или
+                                продаешь онлайн. Все в одной ссылке.
+                            </p>
+                            <div class="underline-icon">
+                                <picture>
+                                    <source media="(max-width: 375px)" srcset="./icons/small-underline.svg">
+                                    <img src="./icons/underline.svg" alt="Underline icon">
+                                </picture>
+                            </div>
+                            <div class="illustrition-icon">
+                                <picture>
+                                    <source media="(max-width: 375px)" srcset="./icons/small-illustrition.svg">
+                                    <img src="./icons/illustrition.svg" alt="Illustrition icon">
+                                </picture>
+                            </div>
+                        </div>
+
+                        <div class="progect-image">
+                            <picture>
+                                <source media="(max-width: 375px)" srcset="./images/Small-Hero-Pic.png">
+                                <img src="./images/Hero-Pic.png" alt="Progect Photo">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="form-container">
+                        <form method="post">
+                            <input type="email" name="email" placeholder="your@mail.com" required class="form-input">
+                            <button class="form-button" type="submit">
+                                <span class="form-button-text">Создать страницу</span>
+                                <img src="./icons/arrow.svg" alt="">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-80">
+            <div class="container">
+                <a id="opportunities"></a>
+                <div class="opportunities">
+                    <div class="opportunitie">
+                        <div class="icon">
+                            <img src="./icons/3-lines.svg" alt="3 Lines Icon" class="lines-icon">
+                        </div>
+                        <div class="description">
+                            <h2>Кастомные элементы</h2>
+                            <p>Создавай и кастомизируй свой профиль за считанные минуты!</p>
+                        </div>
+                    </div>
+                    <div class="opportunitie">
+                        <div class="spot-icon">
+                            <img src="./icons/spot.svg" alt="Spot Icon">
+                        </div>
+                        <div class="description">
+                            <h2>Подробная аналитика</h2>
+                            <p>Отслеживай информацию о том, кто и откуда интересовался твоим профилем</p>
+                        </div>
+                    </div>
+                    <div class="opportunitie">
+                        <div class="star-icon">
+                            <img src="./icons/star.svg" alt="Star Icon">
+                        </div>
+                        <div class="description">
+                            <h2>Короткая
+                                <span>ссылка</span>
+                            </h2>
+                            <div>
+                                <p>Красивая персональная</p>
+                                <p>ссылка на профиль бесплатно!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-80">
+            <div class="container">
+                <a id="try-introduction"></a>
+                <div class="try-introduction">
+                    <div class="examples">
+                        <div class="aboute-me">
+                            <div class="profile-image">
+                                <picture>
+                                    <source media="(max-width: 375px)" srcset="./images/Small-Avatar.png">
+                                    <source media="(max-width: 768px)" srcset="./images/Middle-Avatar.png">
+                                    <img src="./images/Avatar.png" alt="User Avatar">
+                                </picture>
+                            </div>
+                            <div class="description">
+                                <div class="aboute">
+                                    <h1 class="name">Майкл Найт</h1>
+                                    <p class="small-decription">Помогу превратить программирование из хобби в
+                                        прибыльную
+                                        профессию
+                                    </p>
+                                </div>
+                                <a href="" class="button">
+                                    <span class="write">Написать</span>
+                                    <picture>
+                                        <source media="(max-width: 375px)" srcset="./icons/mob-small-arrow.svg">
+                                        <source media="(max-width: 768px)" srcset="./icons/tab-small-arrow.svg">
+                                        <img src="./icons/small-arrow.svg" alt="Arrow right">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="work-experience">
+                            <h3 class="title">опыт работы</h3>
+                            <div class="job-list">
+                                <div class="job-info">
+                                    <div class="company-and-link">
+                                        <div class="company">
+                                            <span>Arrival</span>
+                                            <span class="period">(2021-по наст. время)</span>
+                                        </div>
+                                        <a href="https://arrival.com/" class="company-name">arrival.com</a>
+                                    </div>
+                                    <div class="position">Senior Front-End разработчик</div>
+                                </div>
+                                <div class="job-info">
+                                    <div class="company-and-link">
+                                        <div class="company">
+                                            <span>Apple</span>
+                                            <span class="period">(2018-2021)</span>
+                                        </div>
+                                        <a href="https://www.apple.com/" class="company-name">apple.com</a>
+                                    </div>
+                                    <div class="position">Middle+ Front-End разработчик</div>
+                                </div>
+                                <div class="job-list">
+                                    <div class="job-info">
+                                        <div class="company-and-link">
+                                            <div class="company">
+                                                <span>IBM</span>
+                                                <span class="period">(2017-2018)</span>
+                                            </div>
+                                            <a href="https://www.ibm.com/us-en" class="company-name">ibm.com</a>
+                                        </div>
+                                        <div class="position">Middle Front-End разработчик</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="project-info">
+                            <div class="project-photo">
+                                <picture>
+                                    <source media="(max-width: 375px)" srcset="./images/Small-project-photo.png">
+                                    <source media="(max-width: 768px)" srcset="./images/Middle-project-phoro.png">
+                                    <img src="./images/project-photo.png" alt="Project Photo">
+                                </picture>
+                            </div>
+                            <div class="project-description">
+                                <div class="project-name">Arrival Dashboard</div>
+                                <p class="small-description">
+                                    В качестве лид разработчика участвовал в создании и
+                                    развитии систем аналитики для британского стартапа
+                                </p>
+                                <div class="show-project">
+                                    <a href="" class="button-show">
+                                        <span class="show">Посмотреть</span>
+                                        <picture>
+                                            <source media="(max-width: 375px)" srcset="./icons/mob-middle-arrow.svg">
+                                            <source media="(max-width: 768px)" srcset="./icons/tab-middle-arrow.svg">
+                                            <img src="./icons/middle-arrow.svg" alt="Arrow Rihgt">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="try">
+                        <div class="try-text">Большое количество кастомизируемых элементов поможет лучше
+                            рассказать
+                            миру
+                            о
+                            себе и привлечь новых клиентов
+                        </div>
+                        <a href="" target="_blank" class="try-link">
+                            <span class="button-link">Попробовать бесплатно</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-80">
+            <div class="container">
+                <a id="prices"></a>
+                <div class="prices">
+                    <h3 class="title">тарифы</h3>
+                    <div class="price-list">
+                        <div class="price-basic">
+                            <div class="price-description">
+                                <div class="price-title">базовый</div>
+                                <div class="price-for-month">
+                                    <span class="price">0₽ </span>
+                                    <span class="per-month">/мес</span>
+                                </div>
+                                <p>Для тех, кто хочет попробовать сервис</p>
+                                <ul class="benefit">
+                                    <li>Нет платы за использование</li>
+                                    <li>Бесплатный домен</li>
+                                    <li>Несколько тем оформления на выбор</li>
+                                </ul>
+                            </div>
+                            <a href="" target="_blank" class="try-button">Попробовать</a>
+                        </div>
+                        <div class="price-premium">
+                            <div class="price-description">
+                                <div class="price-title">премиум</div>
+                                <div class="price-for-month">
+                                    <span class="price">250₽ </span>
+                                    <span class="per-month">/мес</span>
+                                </div>
+                                <p>Для продвинутых пользователей</p>
+                                <ul class="benefit">
+                                    <li>Более 100 кастомных элементов</li>
+                                    <li>Доступ к аналитике</li>
+                                    <li>Скидки на продвижение</li>
+                                    <li>Бесплатное хранилище фото</li>
+                                </ul>
+                            </div>
+                            <a href="" target="_blank" class="try-button">Получить премиум</a>
+                            <div class="best-choice">Лучший выбор</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-80">
+            <div class="container">
+                <a id="faq-box"></a>
+                <div class="faq-box">
+                    <h3 class="title">FAQ</h3>
+                    <div class="faqs">
+                        <details>
+                            <summary>Зачем мне нужен Quicklink?</summary>
+                            <p>Это единая ссылка, которую вы можете использовать, чтобы связать вашу аудиторию со всем,
+                                что вы делаете, и со всем, что вам небезразлично. Это позволяет делиться множеством
+                                ссылок в одной, чтобы ваши подписчики, посетители и клиенты могли найти все, что они
+                                ищут, в одном месте.
+                            </p>
+                            <p>Вы можете добавить ссылку на Quicklink на платформах социальных сетей, таких как Tiktok
+                                и Instagram, включить в подписи к электронной почте и даже отобразить в виде QR-кода,
+                                чтобы ваша офлайн-аудитория связалась с вами онлайн.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>Как я могу использовать свой профиль?</summary>
+                            <p>
+                                Ваш профиль QuickLink — это место, где вы можете объединить все ваши социальные сети,
+                                контакты и ссылки на проекты в одном месте. Поделитесь им с друзьями, клиентами или
+                                коллегами для удобного доступа к вашей информации.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>Как много ссылок на профиль я могу создать?</summary>
+                            <p>
+                                На базовом тарифе вы можете создать до 10 ссылок для вашего профиля. Если вам нужно
+                                больше, премиум подписка позволяет добавлять неограниченное количество ссылок.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>Что дает премиум подписка?</summary>
+                            <p>
+                                Премиум подписка предоставляет больше функций: настройку дизайна профиля, аналитику
+                                посещений, неограниченное количество ссылок и дополнительные инструменты для продвижения
+                                вашего бренда.
+                            </p>
+                        </details>
+                        <details>
+                            <summary>Какие ограничения есть на базовом тарифе?</summary>
+                            <p>
+                                На базовом тарифе доступны до 10 ссылок, ограниченные возможности настройки профиля и
+                                отсутствие аналитики. Чтобы снять эти ограничения, можно перейти на премиум тариф.
+                            </p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="container">
+        <div class="feedback-icon">
+            <a href="">
+                <img src="./icons/feedback.svg" alt="feedback icon">
+            </a>
+        </div>
+    </div>
+    <footer class="mt-80">
+        <div class="container">
+            <div class="footer-info">
+                <div class="social-media">
+                    <div class="footer-quicklink-logo">
+                        <img src="./icons/quick-white.svg" alt="quicklink logo">
+                        <a href="" class="quicklink-text">QUICKLINK</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="" class="social-link">
+                            <img src="./icons/facebook.svg" alt="facebook icon">
+                        </a>
+                        <a href="" class="social-link">
+                            <img src="./icons/twitter.svg" alt="facebook icon">
+                        </a>
+                        <a href="" class="social-link">
+                            <img src="./icons/instagram.svg" alt="facebook icon">
+                        </a>
+                        <a href="" class="social-link">
+                            <img src="./icons/youtube.svg" alt="facebook icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="item">
+                        <a href="">Что это?</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Как это работает?</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Сколько стоит?</a>
+                    </div>
+                    <div class="item">
+                        <a href="">FAQ</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="item">
+                        <a href="">Перс. данные</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Безопасность</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Документы</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Политика отмены</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="item">
+                        <a href="">Поддержка</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Компания</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Вакансии</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Партнерам</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
