@@ -43,5 +43,5 @@ git clone git@github.com:NurbekFrontDev/Quicklink-Course.git
 ![Image](https://github.com/user-attachments/assets/688306e8-618a-4f07-afba-f61af091da59)
 ## 📩 Контакты
 #### GitHub: [NurbekFrontDev](https://github.com/NurbekFrontDev)
-#### Telegram: [nurbekkDD](https://t.me/nurbekkDD)
-#### Email: [p896566@gmail.com](mailto:p896566@gmail.com)
+#### Telegram: [nurbekfrontdev](https://t.me/nurbekfrontdev)
+#### Email: [Email](mailto:dlaprogrammirovanieidlaameriki@gmail.com)
