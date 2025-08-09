@@ -1,0 +1,1394 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Manrope';
+}
+
+body {
+    background: rgba(20, 14, 23, 1);
+    margin: 64px 20px 220px 20px;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    border-radius: 32px;
+    padding: 18px 24px;
+    background: rgba(51, 51, 51, 1);
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-side {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    max-width: 754px;
+    width: 100%;
+    gap: 15px;
+}
+
+.quicklink-logo {
+    border-radius: 16px;
+    padding: 8px 16px;
+    background: rgba(245, 250, 147, 1);
+    max-width: 190px;
+    width: 100%;
+    display: flex;
+    gap: 4px;
+    
+}
+
+.quicklink-logo:hover {
+    background: rgba(255, 255, 160, 1); 
+}
+
+.quicklink-text {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+.hidden {
+    display: none;
+}
+
+.menu-item {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.menu-item:hover {
+    color: rgba(245, 250, 147, 1);
+}
+
+.right-side nav {
+    display: none;
+}
+
+.right-side .menu-list {
+    display: none;
+}
+
+.burger-checkbox {
+    display: none;
+}
+
+.burger-login {
+    display: none;
+}
+
+.burger-login,
+.login {
+    border-radius: 16px;
+    background: rgba(235, 235, 235, 1);
+    max-width: 56px;
+    width: 100%;
+    padding: 8px 16px 3px 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.burger-login,
+.login:hover {
+    background: rgba(245, 245, 245, 1);
+}
+
+.burger-menu {
+    border-radius: 16px;
+    background: rgba(118, 117, 123, 1);
+    padding: 8px 16px;
+    display: flex;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.small-introduction {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+}
+
+.small-introduction .small-description {
+    max-width: 540px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 53px;
+    position: relative;
+}
+
+.underline-icon {
+    position: absolute;
+    left: 57px;
+    bottom: 108px;
+}
+
+.illustrition-icon {
+    position: absolute;
+    right: 13px;
+    top: -14px;
+}
+
+.small-introduction .small-description .small-title {
+    position: relative;
+}
+
+.small-introduction .small-description .small-title {
+    display: flex;
+    flex-direction: column;
+    font-size: 68px;
+    font-weight: 800;
+    line-height: 75px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.small-introduction .small-description p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 1);
+}
+
+form {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-input {
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 1);
+    padding: 20px 14px;
+    max-width: 317px;
+    width: 100%;
+    outline: none;
+}
+
+.form-input::placeholder {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    color: rgba(118, 117, 123, 1);
+}
+
+.form-button {
+    max-width: 222px;
+    width: 100%;
+    background: rgba(245, 250, 147, 1);
+    border-radius: 18px;
+    border: none;
+    padding: 18px 14px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    gap: 8px;
+}
+
+.form-button:hover {
+    background: rgba(255, 255, 160, 1);
+}
+
+.form-button-text {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    max-width: 162px;
+    width: 100%;
+}
+
+.opportunities {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.opportunitie {
+    max-width: 317px;
+    width: 100%;
+    border: 1px solid rgba(245, 250, 147, 1);
+    border-radius: 32px;
+    padding: 31px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.spot-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.star-icon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+
+.aboute {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.description h2 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 54px;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.description p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.try-for-free {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.try-introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.examples {
+    position: relative;
+    height: 430px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 50px 0 50px;
+}
+
+.aboute-me {
+    max-width: 658px;
+    width: 100%;
+    border: 2px solid rgba(51, 51, 51, 1);
+    background: rgba(20, 14, 23, 1);
+    border-radius: 24px;
+    padding: 29px 72px;
+    display: flex;
+    gap: 79px;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.description .small-decription {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 13px;
+}
+
+.button {
+    max-width: 106px;
+    width: 100%;
+    border-radius: 9px;
+    background: rgba(249, 214, 158, 1);
+    padding: 8px 6px;
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 11px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+.button picture {
+    height: 0;
+}
+
+.write {
+    width: 100%;
+}
+
+.work-experience {
+    max-width: 545px;
+    width: 100%;
+    border: 1px solid rgba(51, 51, 51, 1);
+    border-radius: 24px;
+    padding: 18px 18px 14px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.work-experience .title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 19px;
+    color: rgba(170, 219, 107, 1);
+    margin-left: 0;
+}
+
+.job-list {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.job-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.company-and-link {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.company {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    gap: 6px;
+}
+
+.period {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19px;
+    color: rgba(118, 117, 123, 1);
+}
+
+.company-name {
+    color: rgba(118, 117, 123, 1);
+    text-decoration: underline;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+.position {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.name {
+    font-size: 31px;
+    font-weight: 800;
+    line-height: 34px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.project-info {
+    max-width: 220px;
+    width: 100%;
+    border-radius: 21px;
+    background: rgba(255, 175, 176, 1);
+    padding: 21px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.project-name {
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+.project-description .small-description {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17px;
+}
+
+.show-project {
+    display: flex;
+    justify-content: end;
+}
+
+.button-show {
+    max-width: 118px;
+    width: 100%;
+    border: 0.66px solid rgba(51, 51, 51, 1);
+    border-radius: 12px;
+    padding: 11.79px 9.17px;
+    display: flex;
+    justify-content: space-between;
+    gap: 7.86px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+
+}
+
+.show {
+    width: 100%;
+}
+
+.show-project picture {
+    height: 0;
+}
+
+.try {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: end;
+    border: 1px solid rgba(51, 51, 51, 1);
+    border-radius: 32px;
+    padding: 24px;
+}
+
+.try-text {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.try-link {
+    border: 1px solid rgba(51, 51, 51, 1);
+    border-radius: 18px;
+    padding: 17px 13px;
+    max-width: 245px;
+    width: 100%;
+    text-align: center;
+}
+
+.try-link:hover {
+    background-color: rgba(40, 34, 43, 1);
+}
+
+.button-link {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.prices {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.price-list {
+    display: flex;
+    gap: 32px;
+}
+
+.price-basic {
+    max-width: 484px;
+    width: 100%;
+    background: rgba(245, 250, 147, 1);
+    padding: 32px;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price-premium {
+    max-width: 484px;
+    width: 100%;
+    background: rgba(245, 250, 147, 1);
+    padding: 32px;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+}
+
+.best-choice {
+    max-width: 144px;
+    width: 100%;
+    border: 1px solid rgba(51, 51, 51, 1);
+    border-radius: 18px;
+    background: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: -24px;
+    right: 32px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding: 13px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.price-description {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.price-description p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+    color: rgba(245, 250, 147, 1);
+    margin-left: 24px;
+}
+
+.price-title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.price-for-month {
+    display: flex;
+    gap: 0;
+    align-items: baseline;
+}
+
+.price {
+    font-size: 68px;
+    font-weight: 800;
+    line-height: 78px;
+}
+
+.per-month {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+}
+
+.price-premium .benefit {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.benefit li {
+    display: flex;
+    gap: 4px;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.benefit li::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(./icons/tick.svg);
+}
+
+.try-button {
+    max-width: 200px;
+    width: 100%;
+    border: 1px solid rgba(51, 51, 51, 1);
+    border-radius: 18px;
+    background: rgba(0, 0, 0, 1);
+    padding: 18px 14px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+.try-button:hover {
+    background-color: rgba(40, 34, 43, 1);
+}
+
+.try-button a {
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.faq-box {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.faqs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+details {
+    border: 1px solid rgba(51, 51, 51, 1);
+    border-radius: 32px;
+    padding: 24px;
+    cursor: pointer;
+    position: relative;
+}
+
+details summary {
+    list-style: none;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+details[open] summary::after {
+    content: '';
+    background-image: url(./icons/minus.svg);
+    width: 24px;
+    height: 24px;
+}
+
+summary::after {
+    content: '';
+    background-image: url(./icons/plus.svg);
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 24px;
+}
+
+details p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    color: rgba(118, 117, 123, 1);
+    padding: 32px 0 0 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+}
+
+.footer-info {
+    display: flex;
+    gap: 24px;
+    padding: 60px 0 60px 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 232px;
+    width: 100%;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+
+}
+
+.footer-quicklink-logo {
+    max-width: 232px;
+    width: 100%;
+    padding: 4px 0 4px 8px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.footer-info .quicklink-text {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 33px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-info .quicklink-text:hover {
+    color: rgba(230, 230, 230, 1);
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 232px;
+    width: 100%;
+}
+
+.item {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.item a {
+    color: rgba(255, 255, 255, 1);
+}
+
+.item a:hover {
+    color: rgba(245, 250, 147, 1);
+}
+
+.feedback-icon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.feedback-icon a {
+    padding: 16px;
+    background: rgba(245, 250, 147, 1);
+    border: 1px solid rgba(51, 51, 51, 1);
+    border-radius: 99px;
+    max-width: 56px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 64px;
+
+}
+
+.feedback-icon a:hover {
+    background-color: rgba(255, 255, 170, 1);
+}
+
+@media screen and (max-width: 1024px) {
+    .illustrition-icon {
+        right: -24px; 
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .illustrition-icon {
+        right: -50px;
+    }
+
+    .underline-icon {
+        bottom: 135px;
+    }
+}
+
+@media screen and (max-width: 952px) {
+    .illustrition-icon {
+        right: 95px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .illustrition-icon {
+        right: 70px;
+    }
+
+    .underline-icon {
+        bottom: 160px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .illustrition-icon {
+        right: 50px;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .illustrition-icon {
+        right: -20px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .illustrition-icon {
+        right: -45px;
+    }
+
+    .underline-icon {
+        bottom: 195px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .burger-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .burger-checkbox {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .burger {
+        cursor: pointer;
+        display: block;
+        position: relative;
+        border: none;
+        background: transparent;
+        width: 56px;
+        height: 40px;
+        z-index: 4;
+        background-color: rgba(118, 117, 123, 1);
+        border-radius: 16px;
+    }
+
+    .burger::before,
+    .burger::after {
+        content: '';
+        left: 20px;
+        position: absolute;
+        display: block;
+        width: 16px;
+        height: 2px;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 1);
+    }
+
+    .burger::before {
+        top: 16px;
+        transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+    }
+
+    .burger::after {
+        bottom: 16px;
+        transition: bottom .3s .15s, transform .3s;
+    }
+
+    .burger-checkbox:checked+.burger::before {
+        top: 19px;
+        transform: rotate(45deg);
+        box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+        transition: box-shadow .15s, top .3s, transform .3s .15s;
+        width: 24px;
+        left: 16px;
+    }
+
+    .burger-checkbox:checked+.burger::after {
+        bottom: 19px;
+        transform: rotate(-45deg);
+        transition: bottom .3s, transform .3s .15s;
+        width: 24px;
+        left: 16px;
+    }
+
+    .nav-menu-list {
+        display: none;
+    }
+
+    .right-side nav .menu-list {
+        padding: 111px 24px 18px 24px;
+        background: rgba(51, 51, 51, 1);
+        list-style-type: none;
+        max-width: 728px;
+        width: 100%;
+        border-radius: 32px;
+        border: 1px solid rgba(0, 0, 0, 1);
+    }
+
+    .burger-login {
+        display: block;
+    }
+
+    .menu-list li {
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 8px 24px 24px;
+        align-items: center;
+    }
+
+    .border-bottom {
+        border-bottom: 1px solid rgba(118, 117, 123, 1);
+    }
+
+
+    .menu-item {
+        display: block;
+        color: white;
+        font-size: 24px;
+        text-align: center;
+        text-decoration: none;
+        line-height: 28px;
+    }
+
+    .menu-item:hover {
+        color: white;
+    }
+
+    .menu-item:active {
+        color: rgba(245, 250, 147, 1);
+    }
+
+    .burger-checkbox:checked~nav {
+        display: flex;
+        padding: 0 20px;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        width: 100%;
+    }
+
+    .burger-checkbox:checked~nav .menu-list {
+        z-index: 3;
+        display: block;
+    }
+
+    .burger-checkbox:checked~.overlay {
+        opacity: 1;
+        visibility: visible;
+        z-index: 2;
+    }
+
+    .illustrition-icon {
+        right: 13px;
+    }
+
+    .underline-icon {
+        bottom: 108px;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .introduction {
+        position: relative;
+        gap: 64px;
+    }
+
+    .progect-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        opacity: 20%;
+        z-index: -1;
+    }
+
+    .opportunitie {
+        max-width: 728px;
+        width: 100%;
+    }
+
+    .opportunitie .description {
+        max-width: 664px;
+        width: 100%;
+        gap: 18px;
+    }
+
+    .examples {
+        max-width: 720px;
+        width: 100%;
+        height: 310px;
+        padding: 0 36px 0 36px;
+    }
+
+    .aboute-me {
+        max-width: 473px;
+        width: 100%;
+        padding: 21px 52px;
+        gap: 57px;
+        border-radius: 17px;
+    }
+
+    .aboute-me .description {
+        max-width: 180px;
+        width: 100%;
+        gap: 21px;
+    }
+
+    .aboute {
+        gap: 7px;
+    }
+
+    .name {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .description .small-decription {
+        font-size: 8px;
+        line-height: 9px;
+    }
+
+    .button {
+        max-width: 76px;
+        width: 100%;
+        border-radius: 6px;
+        padding: 5.92px 4.6px;
+        font-size: 6px;
+        line-height: 8px;
+        gap: 2.63px;
+    }
+
+    .work-experience {
+        max-width: 392px;
+        width: 100%;
+        border-radius: 17px;
+        gap: 17px;
+        padding: 13px 13px 4px 13px;
+    }
+
+    .job-list {
+        gap: 15px;
+    }
+
+    .job-info {
+        gap: 4px;
+    }
+
+    .company-and-link {
+        gap: 1px;
+    }
+
+    .work-experience .title {
+        font-size: 13px;
+        line-height: 14px;
+    }
+
+    .company {
+        font-size: 13px;
+        line-height: 15px;
+        gap: 4px;
+    }
+
+    .period {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .company-name {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .position {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .project-info {
+        max-width: 158px;
+        width: 100%;
+        padding: 15px 15px 15px 13px;
+        border-radius: 15px;
+    }
+
+    .project-name {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .project-description .small-description {
+        font-size: 9px;
+        line-height: 12px;
+    }
+
+    .button-show {
+        max-width: 84px;
+        gap: 3.77px;
+        padding: 8.49px 6.6px;
+        border-radius: 8px;
+        font-size: 9px;
+        line-height: 11px;
+        padding: 8px 6px;
+    }
+
+    .show {
+        width: 100%;
+    }
+
+    .price-list {
+        flex-wrap: wrap;
+    }
+
+    .price-basic,
+    .price-premium {
+        max-width: 348px;
+    }
+
+    .price-description p {
+        height: 48px;
+    }
+
+    details summary {
+        max-width: 680px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 491px) {
+    .illustrition-icon {
+        right: 95px;
+    }
+
+    .underline-icon {
+        bottom: 135px;
+    }
+}
+
+@media screen and (max-width: 459px) {
+    .illustrition-icon {
+        right: 60px;
+    }
+
+    .underline-icon {
+        bottom: 163px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .illustrition-icon {
+        right: 35px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .navigation {
+        width: 0;
+    }
+
+    .right-side .menu-list {
+        max-width: 335px;
+        width: 100%;
+    }
+
+    .small-introduction .small-description .small-title span {
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 54px;
+    }
+
+    .underline-icon {
+        left: 0;
+        top: 164px;
+    }
+
+    .illustrition-icon {
+        top: 0;
+        right: 36px;
+    }
+
+    .examples {
+        height: 146px;
+        padding: 0 16px 0 16px;
+    }
+
+    .aboute-me {
+        max-width: 220px;
+        width: 100%;
+        padding: 9.50px 24px;
+        border-radius: 8px;
+        gap: 26.50px;
+        border: 0.67px solid rgba(51, 51, 51, 1);
+    }
+
+    .name {
+        font-size: 10px;
+        line-height: 11px;
+    }
+
+    .aboute-me .small-decription {
+        font-size: 3.60px;
+        line-height: 4px;
+    }
+
+    .aboute {
+        gap: 3px;
+    }
+
+    .aboute-me .description {
+        gap: 9px;
+        max-width: 84px;
+        width: 100%;
+    }
+
+    .button {
+        max-width: 35px;
+        width: 100%;
+        border-radius: 2.70px;
+        padding: 2.75px 2.14px;
+        font-size: 2.70px;
+        line-height: 4px;
+        gap: 1.20px;
+    }
+
+    .work-experience {
+        max-width: 182px;
+        width: 100%;
+        padding: 6px 6px 0 6px;
+        gap: 8px;
+        border-radius: 8px;
+        border: 0.20px solid rgba(51, 51, 51, 1);
+    }
+
+    .work-experience .title {
+        font-size: 6px;
+        line-height: 6px;
+    }
+
+    .job-list {
+        gap: 7px;
+    }
+
+    .job-info {
+        gap: 2px;
+    }
+
+    .company-and-link {
+        gap: 0;
+    }
+
+    .company {
+        gap: 2px;
+        font-size: 6px;
+        line-height: 7px;
+    }
+
+    .period {
+        font-size: 4.50px;
+        line-height: 6.50px;
+    }
+
+    .company-name {
+        font-size: 4.50px;
+        line-height: 6.50px;
+    }
+
+    .position {
+        font-size: 4.50px;
+        line-height: 6.50px;
+    }
+
+    .project-info {
+        max-width: 73px;
+        width: 100%;
+        padding: 7px 7px 6px 7px;
+        border-radius: 7px;
+    }
+
+    .project-name {
+        font-size: 9px;
+        line-height: 11px;
+    }
+
+    .project-description .small-description {
+        font-size: 4px;
+        line-height: 5px;
+    }
+
+    .button-show {
+        max-width: 39px;
+        border-radius: 4px;
+        padding: 4px 3px;
+        gap: 1.50px;
+        border: 0.20px solid rgba(51, 51, 51, 1);
+        font-size: 4px;
+        line-height: 5px;
+    }
+
+    .price-basic {
+        gap: 24px;
+    }
+
+
+    details summary {
+        max-width: 261px;
+        width: 100%;
+    }
+
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
